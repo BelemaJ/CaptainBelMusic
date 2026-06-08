@@ -1,25 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CAPTAIN BEL</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAPTAIN BEL | Where Music Meets Storytelling</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#000;
+color:white;
+line-height:1.6;
+}
+
+section{
+padding:80px 10%;
+}
+
+h1,h2,h3{
+margin-bottom:20px;
+}
+
+.gold{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url('images/hero.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:5rem;
+letter-spacing:3px;
+}
+
+.hero-content p{
+font-size:1.4rem;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+margin:10px;
+border:2px solid #d4af37;
+color:#d4af37;
+text-decoration:none;
+border-radius:4px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d4af37;
+color:black;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:12px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.card{
+background:#111;
+padding:25px;
+border-radius:10px;
+}
+
+form{
+display:grid;
+gap:15px;
+}
+
+input, select, textarea{
+padding:14px;
+border:none;
+border-radius:6px;
+font-size:1rem;
+}
+
+textarea{
+min-height:140px;
+}
+
+button{
+padding:14px;
+background:#d4af37;
+color:black;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#111;
+}
+
+.socials a{
+color:#d4af37;
+margin:0 10px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:3rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
 </head>
-<body style="background:black;color:gold;font-family:Arial;text-align:center;padding:50px;">
+<body>
+<section class="hero">
+<div class="hero-content">
 <h1>CAPTAIN BEL</h1>
-<h2>Where Music Meets Storytelling</h2>
-
-<p>Official website coming soon.</p>
-
-<p>Artist • Performer • Storyteller</p>
-
-<p>
-<a href="https://www.instagram.com/captainbel" style="color:gold;">Instagram</a>
-|
-<a href="https://www.tiktok.com/@captainbel" style="color:gold;">TikTok</a>
-|
-<a href="https://youtube.com/@captainbel" style="color:gold;">YouTube</a>
+<p class="gold">
+Where Music Meets Storytelling
 </p>
+<p>
+Artist • Performer • Songwriter • Creative Storyteller
+</p>
+Book CAPTAIN BEL
 
-<p>Bookings: belemajofficial@gmail.com</p>
+Explore
+
+</div>
+</section>
+<section id="about">
+<div class="about">
+<img src="images/about.jpg">
+<div>
+<h2 class="gold">About</h2>
+<p>
+Captain BEL is a multidisciplinary artist and storyteller whose work blends music, spoken word, and creative expression into powerful experiences. Refusing to be confined by a single genre, Captain BEL explores a range of sounds and perspectives while creating meaningful connections through authentic storytelling.
+</p>
+<br>
+<p>
+From music and performance to songwriting and future work in film and television, Captain BEL's artistic vision is rooted in creativity, imagination, and impact.
+</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="gold">Featured Work</h2>
+<div class="card">
+<h3>FR33</h3>
+<p>Available now.</p>
+<br>
+<h3>U So Dumb</h3>
+<p>Spoken word release.</p>
+</div>
+</section>
+<section>
+<h2 class="gold">Gallery</h2>
+<div class="gallery">
+<img src="images/gallery1.jpg">
+<img src="images/gallery2.jpg">
+<img src="images/gallery3.jpg">
+</div>
+</section>
+<section>
+<h2 class="gold">Connect</h2>
+<div class="socials">
+Instagram
+
+TikTok
+
+YouTube
+
+</div>
+</section>
+<section id="booking">
+<h2 class="gold">Book CAPTAIN BEL</h2>
+<form>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="text" placeholder="Organization">
+<input type="text" placeholder="Event Type">
+<input type="date">
+<select>
+<option>Estimated Budget</option>
+<option>Under $250</option>
+<option>$250-$500</option>
+<option>$500-$1,000</option>
+<option>$1,000+</option>
+</select>
+<select>
+<option>How Did You Hear About CAPTAIN BEL?</option>
+<option>Instagram</option>
+<option>TikTok</option>
+<option>YouTube</option>
+<option>Friend / Family</option>
+<option>Live Performance</option>
+<option>School / University</option>
+<option>Church</option>
+<option>Other</option>
+</select>
+<textarea placeholder="Tell me about your event"></textarea>
+<button type="submit">
+Submit Inquiry
+</button>
+</form>
+<p style="margin-top:20px;">
+Bookings & Business Inquiries:
+<br>
+<strong>belemajofficial@gmail.com</strong>
+</p>
+</section>
+<footer>
+<p>© CAPTAIN BEL</p>
+<p class="gold">
+Where Music Meets Storytelling
+</p>
+</footer>
 </body>
 </html>
